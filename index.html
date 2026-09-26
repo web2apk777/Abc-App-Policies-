@@ -1,11 +1,263 @@
-Privacy Policy for Kids Learning App
-Developer: Rizmedia
-Contact Email: rrrkhan71@gmail.com
-Last updated: September 26, 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Kids Learning App</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 50%, #fbc2eb 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #2c3e50;
+    line-height: 1.7;
+  }
+  .container {
+    max-width: 850px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    overflow: hidden;
+    animation: fadeIn 0.8s ease;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 45px 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: "🎈🎨🧸";
+    position: absolute;
+    top: 10px; left: 20px;
+    font-size: 24px;
+    opacity: 0.4;
+  }
+  .header::after {
+    content: "⭐🌈🎁";
+    position: absolute;
+    bottom: 10px; right: 20px;
+    font-size: 24px;
+    opacity: 0.4;
+  }
+  .header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  }
+  .header p {
+    font-size: 1em;
+    opacity: 0.95;
+  }
+  .emoji-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.25);
+    padding: 6px 18px;
+    border-radius: 50px;
+    margin-top: 12px;
+    font-size: 0.9em;
+    font-weight: 600;
+    backdrop-filter: blur(5px);
+  }
+  .content { padding: 35px 40px 45px; }
+  .info-card {
+    background: linear-gradient(135deg, #f6f9fc 0%, #eef2f7 100%);
+    border-left: 5px solid #667eea;
+    padding: 20px 25px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+  }
+  .info-card p { margin: 6px 0; font-size: 1em; }
+  .info-card strong { color: #667eea; }
+  .section {
+    margin-bottom: 28px;
+    padding: 22px 25px;
+    background: #fafbfc;
+    border-radius: 16px;
+    border: 1px solid #eaeef3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.12);
+  }
+  .section h2 {
+    font-size: 1.25em;
+    color: #4a3f9e;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section h2 .icon {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    width: 38px; height: 38px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    box-shadow: 0 4px 12px rgba(102,126,234,0.3);
+  }
+  .section p, .section li {
+    color: #4a5568;
+    font-size: 0.97em;
+  }
+  .section ul { padding-left: 22px; margin-top: 8px; }
+  .section li { margin-bottom: 6px; }
+  .highlight-box {
+    background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+    padding: 20px 25px;
+    border-radius: 16px;
+    margin-bottom: 28px;
+    text-align: center;
+    font-weight: 600;
+    color: #1a4d2e;
+    font-size: 1.05em;
+    box-shadow: 0 8px 20px rgba(150, 230, 161, 0.35);
+  }
+  .purchase-card {
+    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+    border-radius: 16px;
+    padding: 22px 25px;
+    margin-bottom: 28px;
+    border: 2px dashed #f39c12;
+  }
+  .purchase-card h2 {
+    color: #b7791f;
+    font-size: 1.25em;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .purchase-card p { color: #7b5804; font-size: 0.97em; }
+  .contact-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .contact-box h2 { margin-bottom: 12px; font-size: 1.3em; }
+  .contact-box a {
+    color: #ffe066;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05em;
+    word-break: break-all;
+  }
+  .contact-box a:hover { text-decoration: underline; }
+  .footer {
+    text-align: center;
+    padding: 22px;
+    background: #f6f9fc;
+    color: #8898aa;
+    font-size: 0.85em;
+    border-top: 1px solid #eaeef3;
+  }
+  @media (max-width: 600px) {
+    .content { padding: 25px 20px 35px; }
+    .header h1 { font-size: 1.6em; }
+    .section { padding: 18px 18px; }
+  }
+</style>
+</head>
+<body>
 
-We value your privacy. This application is designed for children.
+<div class="container">
 
-Information Collection: We do not collect, store, or share any personal information of users, including children.
-Usage Data: We do not collect usage data that can identify you.
-Third-Party Services: We do not use third-party services that collect personal information.
-Contact: If you have any questions, please contact us at rrrkhan71@gmail.com.
+  <div class="header">
+    <h1>🔒 Privacy Policy</h1>
+    <p>Kids Learning App</p>
+    <span class="emoji-badge">👶 Safe &amp; Fun for Kids 🎉</span>
+  </div>
+
+  <div class="content">
+
+    <div class="info-card">
+      <p><strong>👨‍💻 Developer:</strong> Rizmedia</p>
+      <p><strong>📧 Contact:</strong> rrrkhan71@gmail.com</p>
+      <p><strong>📅 Last Updated:</strong> September 26, 2026</p>
+    </div>
+
+    <div class="highlight-box">
+      🌟 We value your privacy — especially your child's! 🌟
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">📋</span> Information Collection</h2>
+      <p>We <strong>do not collect, store, or share</strong> any personal information of users, including children. Your child's privacy is fully protected.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">📊</span> Usage Data</h2>
+      <p>We <strong>do not collect usage data</strong> that can identify you or your child in any way.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🤝</span> Third-Party Services</h2>
+      <p>We <strong>do not use third-party services</strong> that collect personal information.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🧒</span> Children's Privacy (COPPA &amp; GDPR-K)</h2>
+      <ul>
+        <li>Our app is designed specifically for children and is fully compliant with COPPA and GDPR-K.</li>
+        <li>We do not knowingly collect any personal data from children under 13.</li>
+        <li>No ads, no tracking, and no behavioral profiling of children.</li>
+        <li>Parents can contact us anytime to request information or deletion of any data.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🛡️</span> Data Security</h2>
+      <p>Since we do not collect any personal data, there is no risk of data misuse, leakage, or unauthorized access. Your child's safety is our top priority.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">📢</span> Reporting &amp; Complaints</h2>
+      <p>If you find any issue or inappropriate content, you can report it directly through the <strong>⚠️ Report button</strong> in the app's Home Screen. You may also email us at <strong>rrrkhan71@gmail.com</strong>.</p>
+    </div>
+
+    <div class="purchase-card">
+      <h2>💳 One-Time Purchase</h2>
+      <p>This app offers a <strong>one-time purchase</strong> only. There are <strong>no subscriptions, no hidden fees, and no recurring charges</strong>. Once purchased, you get full lifetime access to all features.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🔄</span> Policy Updates</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date. Continued use of the app means you accept the revised policy.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">✅</span> Consent</h2>
+      <p>By using this app, you agree to this Privacy Policy. A mandatory consent pop-up is shown on first launch that must be accepted before proceeding.</p>
+    </div>
+
+    <div class="contact-box">
+      <h2>📬 Contact Us</h2>
+      <p>Have questions about our privacy practices?</p>
+      <p style="margin-top:10px;"><a href="mailto:rrrkhan71@gmail.com">rrrkhan71@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2026 Rizmedia · All Rights Reserved · Made with ❤️ for Kids
+  </div>
+
+</div>
+
+</body>
+</html>
